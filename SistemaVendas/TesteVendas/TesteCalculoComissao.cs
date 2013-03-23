@@ -13,8 +13,9 @@ namespace TesteVendas
         {
             double valorVenda = 100;
             double valorEsperado = 5;
-            double valoRetorno = CalculadoraComissao.calcula(valorVenda);
-            Assert.AreEqual(valorEsperado, valoRetorno);
+            CalculadoraComissao calculadoraComissao = new CalculadoraComissao();
+            double valoRetorno = calculadoraComissao.calcula(valorVenda);
+            Assert.AreEqual(valorEsperado, valoRetorno);           
         }
 
         [TestMethod]
@@ -22,8 +23,8 @@ namespace TesteVendas
         {
             double valorVenda = 10000;
             double valorEsperado = 500;
-
-            double valoRetorno = CalculadoraComissao.calcula(valorVenda);
+            CalculadoraComissao calculadoraComissao = new CalculadoraComissao();
+            double valoRetorno = calculadoraComissao.calcula(valorVenda);
             Assert.AreEqual(valorEsperado, valoRetorno);
         }
 
@@ -32,8 +33,8 @@ namespace TesteVendas
         {
             double valorVenda = 1;
             double valorEsperado = 0.05;
-
-            double valoRetorno = CalculadoraComissao.calcula(valorVenda);
+            CalculadoraComissao calculadoraComissao = new CalculadoraComissao();
+            double valoRetorno = calculadoraComissao.calcula(valorVenda);
             Assert.AreEqual(valorEsperado, valoRetorno);
         }
 
@@ -42,8 +43,8 @@ namespace TesteVendas
         {
             double valorVenda = 11000;
             double valorEsperado = 660;
-
-            double valoRetorno = CalculadoraComissao.calcula(valorVenda);
+            CalculadoraComissao calculadoraComissao = new CalculadoraComissao();
+            double valoRetorno = calculadoraComissao.calcula(valorVenda);
             Assert.AreEqual(valorEsperado, valoRetorno);
         }
 
@@ -52,8 +53,8 @@ namespace TesteVendas
         {
             double valorVenda = 110000;
             double valorEsperado = 6600;
-
-            double valoRetorno = CalculadoraComissao.calcula(valorVenda);
+            CalculadoraComissao calculadoraComissao = new CalculadoraComissao();
+            double valoRetorno = calculadoraComissao.calcula(valorVenda);
             Assert.AreEqual(valorEsperado, valoRetorno);
         }
 
@@ -62,8 +63,8 @@ namespace TesteVendas
         {
             double valorVenda = 55.59;
             double valorEsperado = 2.77;
-
-            double valoRetorno = CalculadoraComissao.calcula(valorVenda);
+            CalculadoraComissao calculadoraComissao = new CalculadoraComissao();
+            double valoRetorno = calculadoraComissao.calcula(valorVenda);
             Assert.AreEqual(valorEsperado, valoRetorno);
         }
 

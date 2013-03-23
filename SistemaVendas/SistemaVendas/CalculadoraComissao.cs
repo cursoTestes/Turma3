@@ -7,8 +7,7 @@ namespace SistemaVendas
 {
     public class CalculadoraComissao
     {
-
-        public static double calcula(double valorVenda)
+        public virtual double calcula(double valorVenda)
         {
             double comissao = 0;
 
